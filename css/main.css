@@ -53,18 +53,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-bottom: 35px;
 }
 
 h3 {
+  font-size: 1.25em;
+}
+ 
+p {
   font-size: 1em;
 }
-
-p {
-  font-size: 0.9em;
-}
-
 
 /* ====== NAVIGATION STYLES ======*/
 
@@ -72,20 +71,35 @@ p {
   background-color: #FFF;
   border-radius: 2.5px;
   margin: 0 0 15px 0;
+  transition: color .5s;
 }
 
 .main-nav li a {
   padding: 10px 0 10px 0;
   font-weight: 800;
   display: block;
+  transition: color .2s, background-color .5s;
 }
 
+.main-nav a:hover {
+  color: #FFF;
+  background-color: #edbe56;
+}
 
 
 /* ====== HEADER STYLES ======*/
 
 .main-banner {
   padding: 30px 0 30px 0;
+}
+
+.main-banner img {
+  border-radius: 2.5px;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.125);
+}
+
+.logo a:hover {
+  color: #333;
 }
 
 
@@ -101,6 +115,24 @@ p {
   margin-bottom: 40px;
 }
 
+/* ====== PORTFOLIO STYLES ======*/
+
+#skills img {
+  max-width: 100px;
+}
+
+#skills {
+  background-color: #edbe56;
+  padding: 30px 0 30px 0
+}
+
+#skills li {
+  margin-bottom: 40px;
+}
+
+#skills p {
+  margin: 30px 0 40px 0;
+}
 
 /* ====== CONTACT STYLES ======*/
 
@@ -124,8 +156,9 @@ hr {
   width: 90%;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(211, 211, 211, 0.2), rgba(211, 211, 211, 0.75), rgba(0, 0, 0, 0)); 
-  margin: 50px 0 30px 0;
+  background-image: linear-gradient(to right, rgba(211, 211, 211, 0.25), rgba(211, 211, 211, 0.75), rgba(211, 211, 211, 0.25)); 
+  margin: 50px auto 30px auto;
+  
 }
 
 
@@ -171,7 +204,7 @@ hr {
   
   .main-banner img {
     float: right;
-    width: 35%;
+    width: 30%;
     margin: 0 2.5%;
   }
   
@@ -189,8 +222,17 @@ hr {
     width: 45%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    min-height: 395px;
   }
   
+  /* SKILLS */
+  
+  #skills li {
+    float: left;
+    width: 28%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
   
   /* CONTACT */
   
@@ -218,7 +260,7 @@ hr {
   .footer-nav a:nth-child(2) {
     display: none;
   }
-  
+
 }
 
 
@@ -249,6 +291,7 @@ hr {
   
   #portfolio {
     background-color: #FAFAFA;
+    padding-bottom: 0;
   }
   
   #portfolio .container {
@@ -259,6 +302,25 @@ hr {
   #portfolio li {
     width: 28%;
   }
+  
+   /* PORTFOLIO */
+  
+  #skills {
+    background-color: #FAFAFA;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  #skills .container {
+    background-color: #edbe56;
+    padding: 30px 0 30px 0;
+  }
+  
+  #skills p {
+    max-width: 70%;
+    margin: 20px auto 50px auto;
+  }
+
 }
 
 
